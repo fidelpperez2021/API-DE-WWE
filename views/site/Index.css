@@ -1,0 +1,70 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+/*************BANNER**********************/
+.banner {
+    background-image: url('https://i.ytimg.com/vi/ERUjti5b03Y/hq720.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Altura del banner en escritorio */
+    position: relative;
+}
+.logo-position {
+    position: absolute;
+    top: 50%; /* Centrado vertical */
+    left: 50%; /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Ajusta el centro */
+    width: 100%;
+    max-width: 150px; /* Tamaño máximo del logo en escritorio */
+    z-index: 1; /* Asegura que el logo esté sobre el banner */
+}
+
+/********************************************/ 
+
+/* Media queries para ajustar el tamaño del logo en dispositivos móviles */
+@media (max-width: 600px) {
+    .logo-position {
+        max-width: 100px; /* Tamaño máximo del logo en pantallas pequeñas */
+    }
+    .banner {
+        height: 300px; /* Ajusta la altura del banner en dispositivos móviles */
+    }
+}
+
+@media (max-width: 400px) {
+    .logo-position {
+        max-width: 80px; /* Tamaño máximo del logo en pantallas muy pequeñas */
+    }
+    .banner {
+        height: 250px; /* Ajusta la altura del banner para pantallas muy pequeñas */
+    }
+}
+
+/* Aplica a la imagen del banner para que ocupe todo el ancho */
+header img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+/* Remueve márgenes alrededor de la imagen */
+header {
+    padding: 0;
+}
