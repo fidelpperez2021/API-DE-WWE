@@ -2,7 +2,7 @@
 
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=192.168.1.19;dbname=API_WWE',
+    'dsn' => 'mysql:host=192.168.1.13;dbname=API_WWE',
     'username' => 'YEET',
     'password' => 'YEET',
     'charset' => 'utf8',
