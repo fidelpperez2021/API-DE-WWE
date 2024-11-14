@@ -1,5 +1,5 @@
 <?php
-$servername = "192.168.1.19";
+$servername = "192.168.1.13";
 $username = "YEET";
 $password = "YEET"; // Reemplaza "tu_contraseña" con la contraseña del usuario
 $dbname = "API_WWE"; // Reemplaza con el nombre de tu base de datos
